@@ -1,0 +1,14 @@
+{
+  "name": "yoga",
+  "version": "1.0.0",
+  "description": "Namu darbas-Yoga",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lina",
+  "license": "ISC"
+}
+
