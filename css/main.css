@@ -2,21 +2,21 @@
     --oranzine: #ff4622;
     --plotis: 1000px;
     --soninis-atstumas: calc((100% - var(--plotis)) / 2);
-    --main-width: calc (100%- var(--soninis-atstumas));
-    --text-width: calc(var(--plotis) * 0.4);
-    --text-margin: calc(var(--plotis) * 0.1);
+    --main-width: calc(var(--plotis) + var(--soninis-atstumas));
+    --text-width: calc(var(--plotis) * 0.45);
+    --text-margin: calc(var(--plotis) * 0.05);
     --image-width: calc(100% - var(--plotis) / 2);
 }
 
 body {
     font-family: cursive;
 }
-head {
+header {
     display: inline-block;
     width: var(--plotis);
     margin-left: var(--soninis-atstumas);
 }
-head > img {
+header > img {
      float: left;
      height: 40px;
 }
@@ -30,37 +30,63 @@ nav > a {
     line-height: 20px;
     text-decoration: none;
     color: #2c253e;
+    margin-left: 20px;
     border-bottom: 3px solid transparent;
 }
 nav > a:hover {
-    border-bottom: 5px solid var(--oranzine);
+    border-bottom: var(--oranzine);
 }
 nav > a:first-child {
     margin-left: 0%;
     border-color: var(--oranzine);
 }
 main {
-    
+    display: inline-block;
+    width: var(--main-width);
+    margin-right: var(--text-margin);
+    margin-top: 50px;
 }
 div {
    float: left;
    width: var(--text-width);
    margin-right: var(--text-margin);
+   margin-top: 50px;
 }
 h1 {
    display: inline-block;
-}
-hi > span {
+   width: 100%;
+   font-size: 42px;
+   margin: 0%;
 
 }
+h1 > span {
+    color: var(--oranzine)
+}
 p {
+    display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+
 }
 div > a {
-     
+    display: inline-block;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--oranzine);
+    border: 1px solid #d1583f;
+    border-radius: 4px;
+}
+div > a:hover {
+    background-color: #fff;
+    color: var(--oranzine);
+    background-color: #cf3314;  
 }
 main > img {
-    display: inline-block;
-    width: 100%;
+    float: left;
+    width: var(--image-width);
 }
 
