@@ -13,12 +13,14 @@ body {
 }
 header {
     display: inline-block;
-    width: var(--plotis);
-    margin-left: var(--soninis-atstumas);
+    width: var(--main-width);
+    margin-right: var(--soninis-atstumas);
 }
 header > img {
      float: left;
      height: 40px;
+     margin-left: var(--soninis-atstumas);
+
 }
 nav {
      float:right;
@@ -34,7 +36,7 @@ nav > a {
     border-bottom: 3px solid transparent;
 }
 nav > a:hover {
-    border-bottom: var(--oranzine);
+    border-color: var(--oranzine);
 }
 nav > a:first-child {
     margin-left: 0%;
@@ -43,14 +45,15 @@ nav > a:first-child {
 main {
     display: inline-block;
     width: var(--main-width);
-    margin-right: var(--text-margin);
+    margin-right: var(--soninis-atstumas);
     margin-top: 50px;
 }
 div {
    float: left;
-   width: var(--text-width);
    margin-right: var(--text-margin);
+   width: var(--text-width);
    margin-top: 50px;
+   margin-left: var(--soninis-atstumas);
 }
 h1 {
    display: inline-block;
@@ -81,12 +84,12 @@ div > a {
     border-radius: 4px;
 }
 div > a:hover {
-    background-color: #fff;
-    color: var(--oranzine);
+   /* background-color: #fff; */
+   /* color: var(--oranzine); */
     background-color: #cf3314;  
 }
 main > img {
     float: left;
-    width: var(--image-width);
+    width: 700px;
 }
 
